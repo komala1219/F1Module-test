@@ -1,0 +1,706 @@
+body {
+    background-color: rgb(15, 17, 17);
+}
+
+#company-logo {
+    text-align: center;
+    background: #323025;
+    border-radius: 32px;
+
+
+
+    margin: 0px 3px 0px 0px;
+    width: 230px;
+    padding: 5px;
+    border: none;
+    color: rgb(203, 194, 194);
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btns>button,
+.rt>button {
+    color: rgb(248, 244, 247);
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter';
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    font-weight: 600;
+
+}
+.btns button:hover{
+    background-color: white;
+    color:black;
+}
+
+.left {
+    display: flex;
+}
+
+/*.nav-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 60px;
+    padding: 1px;
+}*/
+
+.cnt>button {
+    color: rgb(11, 11, 11);
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter';
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 20px;
+    width: 160px;
+    font-weight: 400;
+
+}
+
+.cnt-img {
+    border-radius: 18px;
+    padding: 5px;
+    margin-top: -15px;
+}
+
+.getstr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 15px;
+    height: 20px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+
+}
+
+.getstr>a {
+    text-decoration: none;
+    color: rgb(12, 11, 11);
+
+}
+
+.BirmCard {
+    width: 360px;
+    height: 650px;
+
+    background-color: #e0d6c2;
+    border-radius: 18px;
+
+}
+
+.birm-top {
+
+    width: 320px;
+
+
+    background-color: #e0d6c2;
+    border-radius: 18px;
+
+
+    padding: 10px;
+
+
+
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(42, 40, 40);
+    padding: 0px;
+
+    /* margin-top: -60px;*/
+}
+
+.cnt>p {
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.cnt>button,
+.wc1>button {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+.cnt {
+    padding-left: 10px;
+}
+
+.women-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.women {
+    width: 61%;
+    background-color: #8f8868;
+    border-radius: 18px;
+}
+
+.women-img {
+    border-radius: 30px;
+}
+
+.wc1>button {
+
+    color: rgb(11, 11, 11);
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter';
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 20px;
+    width: 160px;
+    font-weight: 400;
+
+}
+
+.portrait {
+    background-color: #976c54;
+    /*width:410px;*/
+    width: 30%;
+
+    border-radius: 18px;
+}
+
+.port-cnt {
+    padding: 10px;
+
+}
+
+.circle1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #342415;
+}
+
+.circles {
+    display: flex;
+    padding: 5px;
+}
+
+.circles-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle-img {
+    width: 410px;
+    width: 30%;
+    border-radius: 18px;
+    background-color: #b5a38d;
+}
+
+.top-circle>button {
+
+    color: rgb(11, 11, 11);
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter';
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 20px;
+    width: 160px;
+    font-weight: 400;
+
+
+
+    font-size: 15px;
+    margin-top: 5px;
+
+
+}
+
+.top-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top-circle,
+.circle-mid {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-circle {
+    margin-top: 10px;
+    ;
+}
+
+.top-circle>button {
+    margin-top: -75px;
+}
+
+
+/*animations*/
+.cnt-img,
+.women-img,
+.port-img,
+.top-circles-img {
+    position: relative;
+    overflow: hidden;
+    perspective: 500px;
+
+
+}
+
+.BirmCard img,
+.women-img img,
+.portrait img,
+.top-circle-img {
+    transition: all 0.2s ease-out;
+}
+
+.BirmCard:hover img,
+.women:hover img,
+.portrait:hover img,
+.circle-img:hover img {
+    transform: translateZ(10px);
+}
+
+/*.portrait:hover .arrow-left{
+    position: relative;
+    left:0;
+    animation-name:move-left;
+    animation-duration:0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move-left{
+    from{
+        left:0;
+    }
+    to{
+        left:-10px;
+    }
+}*/
+.portrait .arrow-left,
+.women .arrow-left,
+.BirmCard .arrow-left,
+.circle-img .arrow-left {
+    position: relative;
+    transition: all 0.1s;
+
+}
+
+.portrait:hover .arrow-left,
+.women:hover .arrow-left,
+.BirmCard:hover .arrow-left,
+.circle-img:hover .arrow-left {
+
+    transform: scaleX(1.5);
+    transform-origin: left center;
+}
+
+
+.bar {
+    width: 0px;
+    background-color: black;
+    height: 3px;
+}
+
+.h2bor {
+    position: relative;
+
+}
+
+.h2bor>.bar {
+    transition: width 0.5s linear;
+
+}
+
+.portrait:hover .bar {
+    width: 100%;
+
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.card-3-4{
+    display: flex;
+    gap:15px;
+}
+.card2-card3-card4{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.pageContainer{
+    display: flex;
+    gap:10px;
+   
+}
+.container{
+    padding:10px 40px 20px;
+
+}*/
+/*Media queries*/
+/* small screens*/
+
+@media(min-width:640px) {
+    .nav-top {
+        width: 100vw;
+
+
+    }
+
+    .nav-container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .company-logo {
+        width: 70%;
+    }
+
+    .btns {
+        visibility: hidden;
+    }
+
+    .rt>#Contact {
+        visibility: hidden;
+    }
+
+    #menu {
+
+
+        position: relative;
+        top: -27px;
+        right: -2px;
+        padding: 10px;
+    }
+
+    /* .BirmCard {
+        width: 600px;
+        background-color: #e0d6c2;
+        border-radius: 18px;
+        padding: 10px;
+       margin-left:15px;
+    }*/
+    .birm-top {
+        width: 630px;
+        width: 95vw;
+
+    }
+
+    .cnt-img img {
+        width: 100%;
+    }
+
+    .BirmCard {
+        width: 630px;
+        margin-bottom: -21px;
+        margin-left: 10px;
+
+    }
+
+    .women {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .portrait {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .circle-img {
+        width: 100vw;
+    }
+}
+
+/*medium screen-tablets*/
+@media screen and (min-width:768px) {
+   
+    .nav-top {
+        width: 100vw;
+
+
+    }
+
+    .nav-container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .company-logo {
+        width: 70%;
+    }
+
+    .btns {
+        visibility: hidden;
+    }
+
+    .rt>#Contact {
+        visibility: hidden;
+    }
+
+    #menu {
+
+
+        position: relative;
+        top: -27px;
+        right: -36px;
+        padding: 10px;
+    }
+
+    /* .BirmCard {
+        width: 600px;
+        background-color: #e0d6c2;
+        border-radius: 18px;
+        padding: 10px;
+       margin-left:15px;
+    }*/
+    .birm-top {
+        width: 93vw;
+
+
+    }
+
+    .cnt-img img {
+        width: 98%;
+    }
+
+    .BirmCard {
+        width: 96vw;
+        margin-bottom: -21px;
+        margin-left: 10px;
+
+    }
+
+    .women {
+        width: 98vw;
+        margin-bottom: 20px;
+    }
+
+    /*  .portrait {
+        width: 98vw;
+        margin-bottom:20px;
+        margin-right: 10px;
+    }
+
+    .circle-img {
+        width:98vw;
+    }*/
+    .card-3-4 {
+        display: flex;
+        gap: 15px;
+    }
+
+    .portrait {
+        width: 46vw;
+
+    }
+
+    .circle-img {
+        width: 46vw;
+        margin-bottom: 20px;
+    }
+}
+
+/* laptop*/
+
+@media screen and (min-width:1024px) 
+{
+    
+    .nav-container {
+        width: 98vw;
+        display: flex;
+        align-items: center;
+
+        border: 2px solid white;
+        border-radius: 60px;
+        padding: 1px;
+
+
+        gap: 20px;
+
+    }
+
+    .rt>#menu {
+        visibility: hidden;
+    }
+
+    .btns {
+        visibility: visible;
+    }
+
+    .rt>#Contact {
+        visibility: visible;
+        position: relative;
+        left: 55px;
+    }
+
+
+    .card2-card3-card4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 58vw;
+        border: 2px solid red;
+        position: relative;
+        left: 417px;
+    top: -826px;
+    }
+
+    .BirmCard {
+        width: 35vw;
+        margin-bottom: -21px;
+        margin-left: 10px;
+        height: 805px;
+
+    }
+
+    .birm-top {
+        width: 30vw;
+
+
+    }
+
+    .cnt-img img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 15px;
+    }
+
+    .portrait {
+        width: 28vw;
+
+    }
+
+    .circle-img {
+        width: 30vw;
+        margin-bottom: 20px;
+    }
+
+    .women {
+        width: 58vw;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+/* desktop-computer--lg*/
+
+@media screen and (min-width:1280px) {
+
+    .nav-container {
+        width: 98vw;
+        display: flex;
+        align-items: center;
+
+        border: 2px solid white;
+        border-radius: 60px;
+        padding: 1px;
+
+
+        gap: 20px;
+
+    }
+
+    .rt>#menu {
+        visibility: hidden;
+    }
+
+    .btns {
+        visibility: visible;
+    }
+
+    .rt>#Contact {
+        visibility: visible;
+        position: relative;
+        left: 55px;
+
+    }
+
+    .card2-card3-card4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 58vw;
+        border: 2px solid red;
+        position: relative;
+        left:503px;
+        top: -820px;
+    }
+
+    .BirmCard {
+        width: 35vw;
+        margin-bottom: -21px;
+        margin-left: 10px;
+        height: 805px;
+
+    }
+
+    .birm-top {
+        width: 30vw;
+
+
+    }
+
+    .cnt-img img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+    }
+
+    .portrait {
+        width: 28vw;
+
+    }
+
+    .circle-img {
+        width: 30vw;
+        margin-bottom: 20px;
+    }
+
+    .women {
+        width: 58vw;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
